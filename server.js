@@ -8,6 +8,12 @@ const app = express();
 // connect DB
 connectDB();
 
+// define Routes
+app.use("/api/users", require("./routes/api/users"));
+app.use("/api/posts", require("./routes/api/posts"));
+app.use("/api/profile", require("./routes/api/profile"));
+app.use("/api/auth", require("./routes/api/auth"));
+
 app.get("/", (req, res) => res.send("API Running"));
 
 app.listen(PORT, () => console.log(`[log] Server started on port ${PORT}`));
