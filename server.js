@@ -8,6 +8,9 @@ const app = express();
 // connect DB
 connectDB();
 
+// init middleware
+app.use(express.json({ extended: false }));
+
 // define Routes
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/posts", require("./routes/api/posts"));
