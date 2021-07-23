@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://mikhailsechin:0D2yBT5CzO4m3NPZJvuUGXuJ@devconnector.3nbud.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://mikhailsechin:0D2yBT5CzO4m3NPZJvuUGXuJ@devconnector.3nbud.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
